@@ -65,7 +65,7 @@ a {
     width: 90%;
     max-width: 1146px;
     margin: auto;
-    padding: 7% 0;
+    padding: 2% 0;
     height: calc(100vh - 152px);
 }
 
@@ -130,10 +130,6 @@ a {
 
     video {
         display: none;
-    }
-
-    .film {
-        padding-top: 2%;
     }
 
     .description {
