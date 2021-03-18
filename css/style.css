@@ -124,7 +124,7 @@ a {
 @media (max-width: 768px) {
     .app {
         height: auto;
-        padding-bottom: 400px;
+        padding-bottom: 250px;
         background: url('../img/cover-image-small.svg') no-repeat bottom center;
     }
 
@@ -151,6 +151,7 @@ a {
 
     .app {
         background-size: 300px;
+        padding-bottom: 200px;
     }
 
     .button {
