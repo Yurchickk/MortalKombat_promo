@@ -49,9 +49,15 @@ a {
 
 .app {
     background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 90.9%);
-    /* url(../img/cover-image-full.svg) no-repeat center right*/
-    min-height: 100vh;
+    height: 100vh;
     color: #fff;
+}
+
+.video {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .film {
@@ -59,7 +65,7 @@ a {
     max-width: 1146px;
     margin: auto;
     padding: 7% 0;
-    height: calc(100vh - 152px);
+    /* height: calc(100vh - 152px);*/
 }
 
 .tags {
@@ -117,8 +123,8 @@ a {
 @media (max-width: 768px) {
     .app {
         height: auto;
-        padding-bottom: 350px;
-        background: #000 url('../img/cover-image-small.svg') no-repeat bottom center;
+        padding-bottom: 400px;
+        background: url('../img/cover-image-small.svg') no-repeat bottom center;
     }
 
     video {
