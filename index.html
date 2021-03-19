@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Mortal Kombat - премьера фильма 2021</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -32,26 +33,30 @@
         </div>
         <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
         <div class="button-group">
-            <button class="button button-primary">Предзаказ фильма</button>
-            <button class="button button-default">
+            <a data-fancybox data-src="#hidden-content" href="javascript:;" class="button button-primary">Предзаказ фильма</a>
+            <div style="display: none;" id="hidden-content">
+                <form action="put">
+                <h1>Введите email:</h1>
+                <input type="text" name="email" id="email">
+                <input type="reset" value="Подписаться"></form>
+            </div>
+            <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-default">
                 <img src="img/play-button.svg" alt="icon: play" class="button-icon"> 
                 <span class="button-text">Смотреть трейлер</span>
-            </button>
+            </a>
         </div>
-       <div class="video">
+      <!-- <div class="video">
             <video autoplay muted loop height="100%">
                 <source src="video/video.mp4" type="video/mp4" media="all">
                  <source src="video/video.ogg" type="video/ogv" media="all">
                  <source src="video/video.webm" type="video/webm" media="all">
             </video>
-        </div>
+        </div>-->
        </section>
     </div>
-    <main>
-       
-    </main>
-    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/jquery.vide.min.js"></script>
-    <script src="js/main.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
